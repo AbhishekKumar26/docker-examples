@@ -144,7 +144,7 @@ services:
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,HttpErrorsDetailed,DebugOn,DiagnosticsOff,InitMessagesOff,RobotDetectionOff
       Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM
       SITECORE_JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
-    entrypoint: powershell.exe -Command "& C:/tools/entrypoints/iis/Development.ps1"
+    entrypoint: powershell -Command "& \"C:\\tools\\entrypoints\\iis\\Development.ps1\""
 
   # Use our retagged XConnect image.
   # Configure for a mounted license folder instead of using SITECORE_LICENSE.
