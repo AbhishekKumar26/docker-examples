@@ -81,7 +81,7 @@ services:
       - solution
     volumes:
       - ${LOCAL_DEPLOY_PATH}\xconnect:C:\deploy
-    entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1"
+    entrypoint: powershell -Command "& \"C:\\tools\\entrypoints\\iis\\Development.ps1\""
 
   xdbsearchworker:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-xdbsearchworker:${VERSION:-latest}
